@@ -1,6 +1,6 @@
 package com.bedu_apk.tu_carrito_a.fragments
 
-import android.os.Bundle
+/*import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -52,9 +52,9 @@ class ListAFragment : Fragment() {
         product.add(ListModel("Modelo Extra Especial", "Alimentos y bebidas", "$300", 4.8f, R.drawable.cerveza_negraespecial))
         product.add(ListModel(" CervezaStella ", "Alimentos y bebidas", "$350", 4.4f, R.drawable.cerveza_estella))
         return product
-    }
+    }*/
 
-    private fun setUpRecyclerView() {
+    /*private fun setUpRecyclerView() {
         binding.recyclerList.setHasFixedSize(true)  //recyclerProducts  //nombre del id del recycle pero del xml
         binding.recyclerList.layoutManager = GridLayoutManager(activity,1,
             GridLayoutManager.VERTICAL,false)
