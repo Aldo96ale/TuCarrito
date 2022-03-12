@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tu_Carrito_A</string>
+    <!--TEXTVIEW-->
+    <string name="account">Don´t have an account</string>
+    <string name="register">Sing up</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcomedesc">Your purchases from anywhere</string>
+    <string name="section_one">Computer and gaming equipment</string>
+    <string name="collectibles">Keep buying</string>
+
+
+    <!--INPUT-->
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">email</string>
+    <string name="new_pass">New Password</string>
+    <string name="con_pass">Confirm Password</string>
+    <string name="tyc">I agree terms and conditions</string>
+
+
+    <!--BUTTON-->
+    <string name="btn_log">Log in</string>
+    <string name="btn_car">Add to Car</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
