@@ -67,6 +67,15 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
+
+            <Button
+                android:id="@+id/btn_addcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_car">
+
+            </Button>
+
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>

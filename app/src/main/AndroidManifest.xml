@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tu_Carrito_A">
         <activity
+            android:name=".adapters.CarritoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListaActivity"
             android:exported="true" />
         <activity

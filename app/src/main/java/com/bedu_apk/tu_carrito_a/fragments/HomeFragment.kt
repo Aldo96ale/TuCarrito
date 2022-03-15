@@ -35,12 +35,6 @@ class HomeFragment : Fragment() {
         //return inflater.inflate(R.layout.fragment_home, container, false)
         binding= FragmentHomeBinding.inflate(layoutInflater)
 
-        binding.card2.setOnClickListener {
-            val intent = Intent(context, ListaActivity::class.java)
-            startActivity(intent)
-        }
-
-
         return binding.root
     }
 

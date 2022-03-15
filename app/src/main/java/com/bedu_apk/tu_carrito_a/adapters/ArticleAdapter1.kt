@@ -1,12 +1,17 @@
 package com.bedu_apk.tu_carrito_a.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.bedu_apk.tu_carrito_a.MainActivity
 import com.bedu_apk.tu_carrito_a.R
 import com.bedu_apk.tu_carrito_a.models.ArticleModel1
 
@@ -46,6 +51,7 @@ class ArticleAdapter1 (
             description.text = product.description
             price.text = product.price
             image.setImageResource(product.idImage)
+
         }
     }
 }

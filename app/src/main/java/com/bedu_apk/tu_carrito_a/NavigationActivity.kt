@@ -8,21 +8,19 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.bedu_apk.tu_carrito_a.databinding.ActivityNavigationBinding
 import com.bedu_apk.tu_carrito_a.fragments.CarritoFragment
-import com.bedu_apk.tu_carrito_a.fragments.DetailFragment
 import com.bedu_apk.tu_carrito_a.fragments.HomeFragment
 import com.bedu_apk.tu_carrito_a.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class NavigationActivity : AppCompatActivity() {
 
-
-
     private val homeFragment= HomeFragment ()
     private val carritoFragment= CarritoFragment()
     private val profileFragment= ProfileFragment()
-    private val detailFragment=DetailFragment()
 
     private lateinit var binding: ActivityNavigationBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,15 +39,24 @@ class NavigationActivity : AppCompatActivity() {
         }
         
         homeFragment.setListener2 {
-            Toast.makeText(this, "diste click", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "CLick", Toast.LENGTH_SHORT).show()
         }
+
+        carritoFragment.setListener {
+            val intent = Intent(this, ListaActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
         val navigation:BottomNavigationView=binding.bottomNav
 
         navigation.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.HomeFragment->replaceFragment(homeFragment)
-                R.id.CarritoFragment->replaceFragment(detailFragment)
+                R.id.CarritoFragment->replaceFragment(carritoFragment)
                 R.id.ProfileFragment->replaceFragment(profileFragment)
             }
             true
@@ -67,25 +74,3 @@ class NavigationActivity : AppCompatActivity() {
 
 
 }
-
-/*homeFragment.setListener2 {
-            val detailFragment = supportFragmentManager.findFragmentById(R.id.containerdetalle2) as? DetailFragment
-            val intent = Intent(this, DetalleActivity::class.java)
-            intent.putExtra(DetalleActivity.PRODUCT,it)
-            startActivity(intent)
-        }*/
-
-/*homeFragment.setListener {
-    val manager= supportFragmentManager
-    val fragment= detailFragment
-    val transaction = manager.beginTransaction()
-    transaction.replace(R.id.container,fragment, PRODUCT)
-    transaction.commit()
-
-
-    val product = intent.getParcelableExtra<ArticleModel1>(PRODUCT)
-    val detailFragment = supportFragmentManager.findFragmentById(R.id.container) as? DetailFragment
-    if (product != null) {
-        detailFragment?.showProduct(product)  //se le agrega un if
-    }
-}*/

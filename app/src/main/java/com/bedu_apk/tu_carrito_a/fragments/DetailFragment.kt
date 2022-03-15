@@ -24,6 +24,7 @@ class DetailFragment : Fragment() {
         //return inflater.inflate(R.layout.fragment_detail, container, false)
         binding= FragmentDetailBinding.inflate(layoutInflater)
         return binding.root
+
     }
 
     fun showProduct(product: ArticleModel1) {  //viene de la clase producto
@@ -33,7 +34,5 @@ class DetailFragment : Fragment() {
         binding.rbRate.rating = product.rating
         binding.imgProduct.setImageResource(product.idImage)
         binding.tvPrice.text = product.price
-
     }
-
 }
