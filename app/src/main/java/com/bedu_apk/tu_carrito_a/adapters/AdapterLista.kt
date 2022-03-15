@@ -18,12 +18,7 @@ class AdapterLista (
     private val clickListener: (SectionModel) -> Unit  //modificar
 ) : RecyclerView.Adapter<AdapterLista.ViewHolder>()  {   //modificar ponerle el mismo nombre del adaptador
 
-    /*override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val product = products[position]
-        holder.bind(product, context)
-        holder.view.setOnClickListener { clickListener(product) }
 
-    }*/
 
     override fun onBindViewHolder(holder: AdapterLista.ViewHolder, position: Int) {
         val product = products.get(position)

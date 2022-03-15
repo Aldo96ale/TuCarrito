@@ -10,6 +10,17 @@
     <string name="collectibles">Keep buying</string>
 
 
+    <string name="farmacia">Pharmacy</string>
+    <string name="abarrotes">Groceries and Drinks</string>
+    <string name="mascota">Pet</string>
+    <string name="hogar">Home</string>
+    <string name="electronicos">Electronics devices</string>
+    <string name="belleza">Fashion and Beauty</string>
+    <string name="juguetes">Toys</string>
+    <string name="deportes">Sports</string>
+
+
+
     <!--INPUT-->
     <string name="user">Username</string>
     <string name="pass">Password</string>

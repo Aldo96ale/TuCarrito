@@ -10,6 +10,15 @@
     <string name="section_one">Equipos de computo y Gaming</string>
     <string name="collectibles">Seguir comprando</string>
 
+    <string name="farmacia">Farmacia</string>
+    <string name="abarrotes">Abarrotes y Bebidas</string>
+    <string name="mascota">Mascotas</string>
+    <string name="hogar">Hogar</string>
+    <string name="electronicos">Dispositivos electrónicos</string>
+    <string name="belleza">Moda y Belleza</string>
+    <string name="juguetes">Juguetes</string>
+    <string name="deportes">Deportes</string>
+
 
     <!--INPUT-->
     <string name="user">Nombre de Usuario</string>

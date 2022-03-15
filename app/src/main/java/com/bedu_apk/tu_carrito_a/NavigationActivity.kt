@@ -42,10 +42,7 @@ class NavigationActivity : AppCompatActivity() {
             Toast.makeText(this, "CLick", Toast.LENGTH_SHORT).show()
         }
 
-        carritoFragment.setListener {
-            val intent = Intent(this, ListaActivity::class.java)
-            startActivity(intent)
-        }
+
 
 
 
